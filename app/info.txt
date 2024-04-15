@@ -1,0 +1,16 @@
+
+http endpoint:
+https://Neha-s-workspace-428mpg.us-east-1.xata.sh/db/rbac-app:main
+
+api keyy = xau_I1IqkBmIYkyWFjdXE8bAraCvsuuvHLOc6
+
+DATABASE_URL=postgresql://428mpg:xau_I1IqkBmIYkyWFjdXE8bAraCvsuuvHLOc6@us-east-1.sql.xata.sh/rbac-app:main?sslmode=require
+
+
+first record: import { PrismaClient } from "prisma/client";
+const prisma = new PrismaClient();
+
+const record = await prisma.tableName.findUnique({
+  where: { xata_id: "rec_xyz" },
+});
+console.log(record);
